@@ -1,0 +1,17 @@
+* Early clojure / pedestal user wonderings
+** Concepts
++ What is actually passed around when defined as ~(:key)~ ? Is it a
+  symbol, or a key? It seems to be able to take an argument
+  afterwards, could it match the value?
++ What is the actual distinction between a "server" and a "service"?
+  It seems to match what an "App" and a "Router" would be in the
+  express.js world, with Interceptors being "middlewares". However,
+  the parallel does not seem that straightforward.
+
+** Game engine (rules composition)
++ Considering the rules check and application is gonna require some
+  kind of composition, what is gonna be the best way to express it in
+  a functionnal / lisp way? Semms like using something along the lines
+  of a ring-like logic flow might do the trick. However, the ultimate
+  goal would be not to have to hardcode rules interactions but just
+  have a composable flow.
